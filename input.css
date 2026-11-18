@@ -1,0 +1,4 @@
+/* ===== DIRECTIVAS DE TAILWIND ===== */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;

@@ -1,0 +1,18 @@
+# Dependencias de Node
+node_modules/
+
+# Archivos de compilación (opcional, si prefieres no versionar el CSS generado)
+# css/tailwind.css 
+
+# Archivos del sistema operativo
+.DS_Store
+Thumbs.db
+
+# Archivos de entorno
+.env
+.env.local
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*

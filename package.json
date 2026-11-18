@@ -1,0 +1,21 @@
+{
+  "name": "kavod-auto-detailing",
+  "version": "1.0.0",
+  "description": "Landing page multipágina para KAVOD Auto Detailing",
+  "main": "index.html",
+  "scripts": {
+    "dev": "tailwindcss -i ./input.css -o ./css/tailwind.css --watch",
+    "build": "tailwindcss -i ./input.css -o ./css/tailwind.css --minify"
+  },
+  "keywords": [
+    "auto detailing",
+    "landing page",
+    "tailwindcss",
+    "vanilla js"
+  ],
+  "author": "Front-End Developer",
+  "license": "MIT",
+  "devDependencies": {
+    "tailwindcss": "^3.4.1"
+  }
+}

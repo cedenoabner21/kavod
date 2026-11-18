@@ -1,0 +1,744 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- ===== SEO Y METADATOS ===== -->
+    <title>KAVOD Auto Detailing | Mobile Car Detailing en Miami-Dade</title>
+    <meta name="description" content="Mobile car detailing en Miami-Dade. Servicios premium de Vehicle Appearance, Reconditioning y Surface Care. Llevamos el taller a tu puerta.">
+    <meta name="theme-color" content="#050505">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🛡️</text></svg>">
+
+    <!-- ===== OPEN GRAPH ===== -->
+    <meta property="og:title" content="KAVOD Auto Detailing | Miami-Dade, FL">
+    <meta property="og:description" content="Especialistas en Vehicle Appearance, Reconditioning y Surface Care. Reserva tu cita hoy.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://tudominio.com/img/og-image.jpg">
+
+    <!-- ===== FUENTES Y PRECONEXIONES ===== -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- ===== ESTILOS ===== -->
+    <link rel="stylesheet" href="css/tailwind.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="bg-kavod-black text-kavod-white antialiased font-sans">
+
+    <!-- ===== HEADER FIJO ===== -->
+    <header class="fixed top-0 left-0 w-full z-50 bg-kavod-black/90 backdrop-blur-md border-b border-kavod-gray/30 transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                
+                <!-- Logo -->
+                <a href="#inicio" class="flex items-center gap-3 group" aria-label="Ir al inicio de KAVOD Auto Detailing">
+                    <svg class="w-10 h-10 text-kavod-silver group-hover:text-kavod-gold transition-colors duration-300" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M50 5 L90 20 V50 C90 75 50 95 50 95 C50 95 10 75 10 50 V20 L50 5 Z" stroke="currentColor" stroke-width="3" fill="transparent"/>
+                        <path d="M40 35 V65 M40 50 L65 35 M40 50 L65 65" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    <div class="flex flex-col">
+                        <span class="text-xl font-bold tracking-[0.2em] text-metal leading-none">KAVOD</span>
+                        <span class="text-[0.6rem] tracking-[0.3em] text-kavod-silver/70 mt-1">AUTO DETAILING</span>
+                    </div>
+                </a>
+
+                <!-- Botón Hamburguesa -->
+                <button type="button" id="boton-menu" class="md:hidden text-kavod-white hover:text-kavod-gold p-2 focus:outline-none focus:ring-2 focus:ring-kavod-gold rounded-md" aria-label="Abrir menú de navegación" aria-expanded="false" aria-controls="navegacion-principal">
+                    <svg id="icono-menu" class="w-6 h-6 block" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+                    <svg id="icono-cerrar" class="w-6 h-6 hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+                </button>
+
+                <!-- Navegación Principal -->
+                <nav id="navegacion-principal" class="absolute top-20 left-0 w-full bg-kavod-dark md:relative md:top-0 md:w-auto md:bg-transparent md:flex md:items-center md:gap-8 border-b border-kavod-gray/30 md:border-none z-40">
+                    <ul class="flex flex-col md:flex-row md:items-center p-6 md:p-0 gap-6 md:gap-8">
+                        <li><a href="#inicio"     class="nav-link text-sm font-medium tracking-widest uppercase hover:text-kavod-gold transition-colors text-kavod-white">Inicio</a></li>
+                        <li><a href="#servicios"  class="nav-link text-sm font-medium tracking-widest uppercase hover:text-kavod-gold transition-colors text-kavod-white">Servicios</a></li>
+                        <li><a href="#paquetes"   class="nav-link text-sm font-medium tracking-widest uppercase hover:text-kavod-gold transition-colors text-kavod-white">Paquetes</a></li>
+                        <li><a href="#portafolio" class="nav-link text-sm font-medium tracking-widest uppercase hover:text-kavod-gold transition-colors text-kavod-white">Portafolio</a></li>
+                        <li><a href="#nosotros"   class="nav-link text-sm font-medium tracking-widest uppercase hover:text-kavod-gold transition-colors text-kavod-white">Nosotros</a></li>
+                        <li><a href="#faq"        class="nav-link text-sm font-medium tracking-widest uppercase hover:text-kavod-gold transition-colors text-kavod-white">FAQ</a></li>
+                    </ul>
+                </nav>
+
+                <!-- Acciones Desktop -->
+                <div class="hidden md:flex items-center gap-6">
+                    <a href="tel:+13058980912" class="text-kavod-white hover:text-kavod-gold transition-colors flex items-center gap-2">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                        <span class="text-sm font-semibold tracking-wider">305 898 0912</span>
+                    </a>
+                    <a href="#contacto" class="btn-brillo bg-kavod-gold text-kavod-black font-bold text-xs py-3 px-6 rounded-sm uppercase tracking-widest hover:bg-yellow-600 transition-colors">
+                        Cotizar Ahora
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </header>
+
+    <!-- ===== CONTENEDOR DE VISTAS ===== -->
+    <div class="pt-20 relative min-h-screen">
+
+        <!-- ===== VISTA PRINCIPAL (Long Scroll) ===== -->
+        <main id="vista-inicio" class="vista block">
+            
+            <!-- HERO ASIMÉTRICO CON FORMULARIO -->
+            <section class="relative min-h-[90vh] flex items-center justify-center py-20 overflow-hidden">
+                <!-- Fondo -->
+                <div class="absolute inset-0 z-0">
+                    <div class="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1601362840469-51e4d8d58785?q=80&w=2070&auto=format&fit=crop')] bg-cover bg-center bg-no-repeat opacity-30 mix-blend-luminosity"></div>
+                    <div class="absolute inset-0 bg-gradient-to-r from-kavod-black via-kavod-black/80 to-transparent"></div>
+                </div>
+
+                <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
+                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+                        
+                        <!-- Texto Hero -->
+                        <div>
+                            <p class="text-kavod-gold text-sm uppercase tracking-[0.2em] font-semibold mb-4 block">— Detailing Móvil · Miami-Dade —</p>
+                            <h1 class="text-5xl md:text-6xl font-extrabold text-metal leading-tight mb-6">
+                                Mobile Car Detailing en <span class="text-kavod-gold">Miami</span>
+                            </h1>
+                            <p class="text-lg text-kavod-silver leading-relaxed mb-8 max-w-lg">
+                                No deberías tener que dejar tu auto y perder toda la mañana. Llevamos el equipo, el agua y manos certificadas directamente a tu casa u oficina. Desde un refrescamiento interior hasta un recubrimiento cerámico.
+                            </p>
+                            <div class="flex flex-col sm:flex-row gap-4 mb-12">
+                                <a href="#contacto" class="btn-brillo bg-kavod-gold text-kavod-black font-bold py-4 px-8 rounded-sm uppercase tracking-widest text-sm text-center hover:bg-yellow-600 transition-colors">Obtener Cotización</a>
+                                <a href="#paquetes" class="border border-kavod-silver/50 text-kavod-white font-semibold py-4 px-8 rounded-sm uppercase tracking-widest text-sm text-center hover:bg-kavod-silver hover:text-kavod-black transition-colors">Ver Paquetes</a>
+                            </div>
+
+                            <!-- Estadísticas -->
+                            <div class="flex items-center gap-8 border-t border-kavod-gray/50 pt-8">
+                                <div>
+                                    <span class="block text-3xl font-bold text-white">100%</span>
+                                    <span class="text-xs text-kavod-silver uppercase tracking-widest">Satisfacción</span>
+                                </div>
+                                <span class="text-kavod-gold text-xl" aria-hidden="true">◆</span>
+                                <div>
+                                    <span class="block text-3xl font-bold text-white">5★</span>
+                                    <span class="text-xs text-kavod-silver uppercase tracking-widest">Reseñas</span>
+                                </div>
+                                <span class="text-kavod-gold text-xl" aria-hidden="true">◆</span>
+                                <div>
+                                    <span class="block text-3xl font-bold text-white">Premium</span>
+                                    <span class="text-xs text-kavod-silver uppercase tracking-widest">Productos</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Formulario Hero (Glassmorphism) -->
+                        <aside class="bg-kavod-dark/80 backdrop-blur-md border border-kavod-gray/50 rounded-lg p-8 shadow-2xl relative">
+                            <div class="absolute top-0 right-0 w-24 h-24 bg-kavod-gold/10 rounded-bl-full pointer-events-none" aria-hidden="true"></div>
+                            <h2 class="text-2xl font-bold text-white mb-6">Cotización Rápida</h2>
+                            <form id="formulario-contacto" class="space-y-4" novalidate>
+                                <label for="hero-nombre" class="sr-only">Nombre completo</label>
+                                <input id="hero-nombre" type="text" name="nombre" placeholder="Nombre completo" required autocomplete="name"
+                                       class="w-full bg-kavod-black/50 border border-kavod-gray text-white px-4 py-3 rounded-sm focus:outline-none focus:border-kavod-gold transition-colors text-sm">
+
+                                <label for="hero-email" class="sr-only">Correo electrónico</label>
+                                <input id="hero-email" type="email" name="email" placeholder="Correo electrónico" required autocomplete="email"
+                                       class="w-full bg-kavod-black/50 border border-kavod-gray text-white px-4 py-3 rounded-sm focus:outline-none focus:border-kavod-gold transition-colors text-sm">
+
+                                <label for="hero-telefono" class="sr-only">Teléfono</label>
+                                <div class="flex">
+                                    <span class="bg-kavod-black/50 border border-r-0 border-kavod-gray text-kavod-silver px-3 py-3 rounded-l-sm text-sm flex items-center">+1</span>
+                                    <input id="hero-telefono" type="tel" name="telefono" placeholder="Teléfono" required inputmode="tel" autocomplete="tel"
+                                           class="w-full bg-kavod-black/50 border border-kavod-gray text-white px-4 py-3 rounded-r-sm focus:outline-none focus:border-kavod-gold transition-colors text-sm">
+                                </div>
+
+                                <label for="hero-servicio" class="sr-only">Servicio</label>
+                                <div class="relative">
+                                    <select id="hero-servicio" name="servicio" required
+                                            class="w-full bg-kavod-black/50 border border-kavod-gray text-white px-4 py-3 pr-10 rounded-sm focus:outline-none focus:border-kavod-gold transition-colors text-sm appearance-none">
+                                        <option value="" disabled selected hidden>Selecciona un servicio...</option>
+                                        <option value="vehicle-appearance">Vehicle Appearance</option>
+                                        <option value="reconditioning">Reconditioning</option>
+                                        <option value="surface-care">Surface Care</option>
+                                        <option value="otro">Otro / Consulta</option>
+                                    </select>
+                                    <svg class="pointer-events-none absolute right-3 top-1/2 -translate-y-1/2 w-4 h-4 text-kavod-gold" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/>
+                                    </svg>
+                                </div>
+
+                                <button type="submit" class="btn-brillo w-full bg-kavod-gold text-kavod-black font-bold py-4 rounded-sm uppercase tracking-widest text-sm hover:bg-yellow-600 transition-colors mt-2">
+                                    Enviar Solicitud
+                                </button>
+                            </form>
+                        </aside>
+
+                    </div>
+                </div>
+            </section>
+
+            <!-- ABOUT (Nuestra Filosofía) -->
+            <section class="py-24 bg-kavod-black relative border-t border-kavod-gray/20" id="nosotros">
+                <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+                        <div class="relative group order-2 lg:order-1">
+                            <div class="absolute -inset-1 bg-gradient-to-r from-kavod-gold to-kavod-silver rounded-lg blur opacity-20 group-hover:opacity-40 transition duration-1000" aria-hidden="true"></div>
+                            <img src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?q=80&w=1000&auto=format&fit=crop" alt="Equipo KAVOD" class="relative rounded-lg object-cover w-full h-[500px] border border-kavod-gray/50" loading="lazy" decoding="async">
+                        </div>
+                        <div class="order-1 lg:order-2">
+                            <p class="text-kavod-gold text-sm uppercase tracking-[0.2em] font-semibold mb-4 block">— Nuestra Filosofía —</p>
+                            <h2 class="text-4xl md:text-5xl font-bold text-metal mb-6">Detailing que llega a ti, en todo Miami-Dade</h2>
+                            <p class="text-kavod-silver leading-relaxed mb-6">
+                                La mayoría del detailing te quita medio día. Nosotros vamos a ti: a tu entrada, oficina o edificio, con nuestro propio equipo, agua y manos certificadas.
+                            </p>
+                            <p class="text-kavod-silver leading-relaxed mb-8">
+                                Acreditados y entrenados: corrección de pintura real, recubrimiento cerámico real. Autos y botes en Miami-Dade, los siete días de la semana.
+                            </p>
+                            <a href="#contacto" class="text-kavod-gold font-semibold uppercase tracking-widest text-sm hover:text-white transition-colors flex items-center gap-2">
+                                Obtener Cotización <span class="text-lg" aria-hidden="true">→</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- SERVICIOS ALTERNADOS (Antes/Después) -->
+            <!-- Servicio 1: Reconditioning (id="servicios" para ancla del nav) -->
+            <section class="py-20 bg-kavod-dark border-y border-kavod-gray/20" id="servicios">
+                <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+                        <div>
+                            <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">Reconditioning — desde <span class="text-kavod-gold">$[PLACEHOLDER]</span></h2>
+                            <p class="text-kavod-silver leading-relaxed mb-4">Vapor, champú y detalle de cada superficie. Manchas, olores, pelo de mascotas — resueltos. Restauramos tela, cuero y plástico para que tu interior se sienta como nuevo.</p>
+                            <p class="text-kavod-silver leading-relaxed mb-8">Café, comida, tinta, arena de la playa — lo hemos visto todo.</p>
+                            <a href="#contacto" class="btn-brillo inline-block bg-kavod-gold text-kavod-black font-bold py-3 px-8 rounded-sm uppercase tracking-widest text-xs hover:bg-yellow-600 transition-colors">Cotizar Reconditioning →</a>
+                        </div>
+                        <div class="relative rounded-lg overflow-hidden border border-kavod-gray/50 group">
+                            <img src="https://images.unsplash.com/photo-1552930294-6b595f4c2974?q=80&w=800&auto=format&fit=crop" alt="Reconditioning" class="w-full h-[400px] object-cover" loading="lazy" decoding="async">
+                            <div class="absolute inset-0 bg-gradient-to-t from-kavod-black/80 to-transparent"></div>
+                            <div class="absolute bottom-4 left-4 flex gap-2">
+                                <span class="bg-kavod-black/80 text-white text-xs px-3 py-1 rounded border border-kavod-gray/50 backdrop-blur-sm">Before</span>
+                                <span class="bg-kavod-gold text-kavod-black text-xs px-3 py-1 rounded font-bold">After</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Servicio 2: Vehicle Appearance -->
+            <section class="py-20 bg-kavod-black">
+                <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+                        <div class="relative rounded-lg overflow-hidden border border-kavod-gray/50 group order-2 lg:order-1">
+                            <img src="https://images.unsplash.com/photo-1601362840469-51e4d8d58785?q=80&w=800&auto=format&fit=crop" alt="Vehicle Appearance" class="w-full h-[400px] object-cover" loading="lazy" decoding="async">
+                            <div class="absolute inset-0 bg-gradient-to-t from-kavod-black/80 to-transparent"></div>
+                            <div class="absolute bottom-4 left-4 flex gap-2">
+                                <span class="bg-kavod-black/80 text-white text-xs px-3 py-1 rounded border border-kavod-gray/50 backdrop-blur-sm">Before</span>
+                                <span class="bg-kavod-gold text-kavod-black text-xs px-3 py-1 rounded font-bold">After</span>
+                            </div>
+                        </div>
+                        <div class="order-1 lg:order-2">
+                            <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">Vehicle Appearance — desde <span class="text-kavod-gold">$[PLACEHOLDER]</span></h2>
+                            <p class="text-kavod-silver leading-relaxed mb-4">Un pulido de un paso que despierta la pintura cansada rápidamente. Cortamos los remolinos ligeros y la oxidación, luego lo sellamos para que el brillo realmente dure.</p>
+                            <p class="text-kavod-silver leading-relaxed mb-8">Funciona en cualquier auto — tu diario o tu fin de semana.</p>
+                            <a href="#contacto" class="btn-brillo inline-block bg-kavod-gold text-kavod-black font-bold py-3 px-8 rounded-sm uppercase tracking-widest text-xs hover:bg-yellow-600 transition-colors">Cotizar Appearance →</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Servicio 3: Surface Care -->
+            <section class="py-20 bg-kavod-dark border-y border-kavod-gray/20">
+                <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+                        <div>
+                            <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">Surface Care — desde <span class="text-kavod-gold">$[PLACEHOLDER]</span></h2>
+                            <p class="text-kavod-silver leading-relaxed mb-4">Una <strong>capa cerámica</strong> que fija el brillo y protege tu pintura del sol de Miami, el aire salado y las manchas de agua durante años — no meses.</p>
+                            <p class="text-kavod-silver leading-relaxed mb-8">Menos lavados. Protección real. Hecho para el Sur de Florida.</p>
+                            <a href="#contacto" class="btn-brillo inline-block bg-kavod-gold text-kavod-black font-bold py-3 px-8 rounded-sm uppercase tracking-widest text-xs hover:bg-yellow-600 transition-colors">Cotizar Surface Care →</a>
+                        </div>
+                        <div class="relative rounded-lg overflow-hidden border border-kavod-gray/50 group">
+                            <img src="https://images.unsplash.com/photo-1620916566398-39f1143ab7be?q=80&w=800&auto=format&fit=crop" alt="Surface Care" class="w-full h-[400px] object-cover" loading="lazy" decoding="async">
+                            <div class="absolute inset-0 bg-gradient-to-t from-kavod-black/80 to-transparent"></div>
+                            <div class="absolute bottom-4 left-4 flex gap-2">
+                                <span class="bg-kavod-black/80 text-white text-xs px-3 py-1 rounded border border-kavod-gray/50 backdrop-blur-sm">Before</span>
+                                <span class="bg-kavod-gold text-kavod-black text-xs px-3 py-1 rounded font-bold">After</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- PAQUETES Y SERVICIOS -->
+            <section class="py-24 bg-kavod-black" id="paquetes">
+                <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                    <div class="text-center mb-16">
+                        <p class="text-kavod-gold text-sm uppercase tracking-[0.2em] font-semibold mb-4 block">— Paquetes & Servicios —</p>
+                        <h2 class="text-4xl md:text-5xl font-bold text-metal mb-6">Nuestros Paquetes de Detailing</h2>
+                        <p class="text-kavod-silver max-w-2xl mx-auto">
+                            Elige un paquete o construye el tuyo. Los precios finales dependen del tamaño y la condición de tu vehículo. Escríbenos por WhatsApp y lo resolvemos en un par de minutos.
+                        </p>
+                    </div>
+
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                        
+                        <!-- Paquete Principal -->
+                        <article class="caja-animada lg:col-span-2 lg:row-span-2 bg-kavod-dark border border-kavod-gold/40 rounded-lg overflow-hidden relative group flex flex-col">
+                            <span class="absolute top-4 right-4 z-20 bg-kavod-gold text-kavod-black text-xs font-bold px-3 py-1 uppercase tracking-wider rounded-sm">★ Más Popular</span>
+                            <div class="h-64 md:h-80 overflow-hidden relative">
+                                <img src="https://images.unsplash.com/photo-1601362840469-51e4d8d58785?q=80&w=1000&auto=format&fit=crop" alt="Paquete Full Detail" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" loading="lazy" decoding="async">
+                                <div class="absolute inset-0 bg-gradient-to-t from-kavod-dark to-transparent"></div>
+                            </div>
+                            <div class="p-8 flex flex-col flex-grow">
+                                <h3 class="text-2xl font-bold text-white mb-2">KAVOD Full Detail</h3>
+                                <p class="text-kavod-gold font-semibold mb-4">Desde $[PLACEHOLDER]</p>
+                                <p class="text-kavod-silver text-sm leading-relaxed mb-6 flex-grow">
+                                    Nuestro paquete más completo: detailing interior y exterior, corrección de pintura de un paso y sellador de alta durabilidad. El equilibrio perfecto entre protección y estética.
+                                </p>
+                                <a href="#contacto" class="btn-brillo block text-center w-full bg-kavod-gold text-kavod-black font-bold py-3 rounded-sm uppercase tracking-wider text-xs hover:bg-yellow-600 transition-colors">Reservar Ahora →</a>
+                            </div>
+                        </article>
+
+                        <!-- Paquete 2 -->
+                        <article class="caja-animada bg-kavod-dark border border-kavod-gray/50 rounded-lg overflow-hidden group">
+                            <div class="h-40 overflow-hidden relative">
+                                <img src="https://images.unsplash.com/photo-1620916566398-39f1143ab7be?q=80&w=600&auto=format&fit=crop" alt="Surface Care" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" loading="lazy" decoding="async">
+                            </div>
+                            <div class="p-6">
+                                <h3 class="text-lg font-bold text-white mb-1">Surface Care</h3>
+                                <p class="text-kavod-gold text-xs font-semibold mb-3">Desde $[PLACEHOLDER]</p>
+                                <p class="text-kavod-silver text-xs leading-relaxed">Protección cerámica avanzada contra rayos UV, salitre y contaminantes.</p>
+                            </div>
+                        </article>
+
+                        <!-- Paquete 3 -->
+                        <article class="caja-animada bg-kavod-dark border border-kavod-gray/50 rounded-lg overflow-hidden group">
+                            <div class="h-40 overflow-hidden relative">
+                                <img src="https://images.unsplash.com/photo-1552930294-6b595f4c2974?q=80&w=600&auto=format&fit=crop" alt="Reconditioning" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" loading="lazy" decoding="async">
+                            </div>
+                            <div class="p-6">
+                                <h3 class="text-lg font-bold text-white mb-1">Reconditioning</h3>
+                                <p class="text-kavod-gold text-xs font-semibold mb-3">Desde $[PLACEHOLDER]</p>
+                                <p class="text-kavod-silver text-xs leading-relaxed">Restauración profunda de interiores. Eliminación de manchas y olores.</p>
+                            </div>
+                        </article>
+
+                        <!-- Paquete 4 -->
+                        <article class="caja-animada bg-kavod-dark border border-kavod-gray/50 rounded-lg overflow-hidden group">
+                            <div class="h-40 overflow-hidden relative">
+                                <img src="https://images.unsplash.com/photo-1542362567-b07e54358753?q=80&w=600&auto=format&fit=crop" alt="Vehicle Appearance" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" loading="lazy" decoding="async">
+                            </div>
+                            <div class="p-6">
+                                <h3 class="text-lg font-bold text-white mb-1">Vehicle Appearance</h3>
+                                <p class="text-kavod-gold text-xs font-semibold mb-3">Desde $[PLACEHOLDER]</p>
+                                <p class="text-kavod-silver text-xs leading-relaxed">Corrección de pintura en varios pasos para un brillo de showroom.</p>
+                            </div>
+                        </article>
+                        
+                        <!-- Paquete 5 (Banner horizontal) — mt-2 eliminado -->
+                        <article class="caja-animada lg:col-span-4 bg-kavod-dark border border-kavod-gray/50 rounded-lg overflow-hidden flex flex-col md:flex-row group">
+                            <div class="md:w-1/3 h-48 md:h-auto overflow-hidden relative">
+                                <img src="https://images.unsplash.com/photo-1618843479313-40f8afb4b4d8?q=80&w=600&auto=format&fit=crop" alt="Servicio Adicional" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" loading="lazy" decoding="async">
+                            </div>
+                            <div class="p-6 md:p-8 md:w-2/3 flex flex-col justify-center">
+                                <h3 class="text-xl font-bold text-white mb-2">Tratamientos Especiales</h3>
+                                <p class="text-kavod-gold text-sm font-semibold mb-3">Cotización a medida</p>
+                                <p class="text-kavod-silver text-sm leading-relaxed mb-4">Ofrecemos protección de película (PPF), limpieza de bahía de motor, y tratamientos cerámicos para interiores. Consulta por servicios para flotas o vehículos de lujo.</p>
+                                <a href="https://wa.me/13058980912?text=Hola%20KAVOD,%20quiero%20cotizar%20un%20tratamiento%20especial" target="_blank" rel="noopener noreferrer" class="btn-brillo inline-block self-start bg-kavod-gold text-kavod-black font-bold py-3 px-6 rounded-sm uppercase tracking-widest text-xs hover:bg-yellow-600 transition-colors">
+                                    Consultar por WhatsApp →
+                                </a>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </section>
+
+            <!-- WHY IT'S WORTH IT -->
+            <section class="py-24 bg-kavod-dark border-t border-kavod-gray/20">
+                <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+                        <div class="relative order-2 lg:order-1">
+                            <img src="https://images.unsplash.com/photo-1503376713246-7b38d3eb8b0a?q=80&w=1000&auto=format&fit=crop" alt="Auto de lujo detallado por KAVOD" class="rounded-lg object-cover w-full h-[500px] border border-kavod-gray/50 shadow-2xl" loading="lazy" decoding="async">
+                            <div class="absolute -bottom-6 -right-6 w-32 h-32 bg-kavod-gold/10 rounded-full blur-2xl pointer-events-none" aria-hidden="true"></div>
+                        </div>
+                        <div class="order-1 lg:order-2">
+                            <p class="text-kavod-gold text-sm uppercase tracking-[0.2em] font-semibold mb-4 block">— Por qué elegirnos —</p>
+                            <h2 class="text-4xl font-bold text-white mb-6">Por qué el Detailing supera al Lavado Automático</h2>
+                            <p class="text-kavod-silver leading-relaxed mb-8">Un lavado automático deja marcas de remolino y pasa por alto todo lo que importa. El detailing real protege el valor de tu vehículo.</p>
+                            
+                            <ul class="space-y-6 mb-10">
+                                <li class="flex items-start">
+                                    <span class="text-kavod-gold text-2xl mr-4 mt-1" aria-hidden="true">🚗</span>
+                                    <div>
+                                        <h3 class="text-white font-bold mb-1">Vamos a ti</h3>
+                                        <p class="text-kavod-silver text-sm">Sin dejar el auto, sin sala de espera, sin perder la mañana.</p>
+                                    </div>
+                                </li>
+                                <li class="flex items-start">
+                                    <span class="text-kavod-gold text-2xl mr-4 mt-1" aria-hidden="true">🛡️</span>
+                                    <div>
+                                        <h3 class="text-white font-bold mb-1">Protección Certificada</h3>
+                                        <p class="text-kavod-silver text-sm">Productos de grado profesional que resisten el calor de Florida.</p>
+                                    </div>
+                                </li>
+                                <li class="flex items-start">
+                                    <span class="text-kavod-gold text-2xl mr-4 mt-1" aria-hidden="true">💰</span>
+                                    <div>
+                                        <h3 class="text-white font-bold mb-1">Mantiene su valor</h3>
+                                        <p class="text-kavod-silver text-sm">Un auto cuidado se vende por más dinero en el futuro.</p>
+                                    </div>
+                                </li>
+                                <li class="flex items-start">
+                                    <span class="text-kavod-gold text-2xl mr-4 mt-1" aria-hidden="true">👥</span>
+                                    <div>
+                                        <h3 class="text-white font-bold mb-1">Un solo equipo experto</h3>
+                                        <p class="text-kavod-silver text-sm">Las mismas manos expertas cada vez, no una línea de rotación.</p>
+                                    </div>
+                                </li>
+                            </ul>
+                            <div class="flex flex-col sm:flex-row gap-4">
+                                <a href="#contacto" class="btn-brillo bg-kavod-gold text-kavod-black font-bold py-3 px-8 rounded-sm uppercase tracking-widest text-xs hover:bg-yellow-600 transition-colors text-center">Obtener Cotización</a>
+                                <a href="tel:+13058980912" class="border border-kavod-silver/50 text-kavod-white font-semibold py-3 px-8 rounded-sm uppercase tracking-widest text-xs hover:bg-kavod-silver hover:text-kavod-black transition-colors text-center">📞 305 898 0912</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- RESEÑAS / TESTIMONIOS -->
+            <section class="py-24 bg-kavod-black relative border-t border-kavod-gray/20">
+                <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                    <div class="text-center mb-16">
+                        <p class="text-kavod-gold text-sm uppercase tracking-[0.2em] font-semibold mb-4 block">— Testimonios —</p>
+                        <h2 class="text-4xl font-bold text-metal">Lo que dicen los clientes</h2>
+                    </div>
+
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                        <div class="bg-kavod-dark border border-kavod-gray/50 p-8 rounded-lg">
+                            <div class="flex text-kavod-gold mb-4 text-lg" aria-label="5 estrellas">★★★★★</div>
+                            <p class="text-kavod-silver text-sm leading-relaxed italic mb-6">"Mi carro parecía que salía de la agencia. Me encantó, súper limpio y terminado a tiempo. Excelente comunicación. Sin duda seguiré mandando mi auto a limpiar con ellos. Increíble trabajo."</p>
+                            <div class="flex items-center gap-4 border-t border-kavod-gray/50 pt-4">
+                                <div class="w-10 h-10 bg-kavod-gold/20 rounded-full flex items-center justify-center text-kavod-gold font-bold" aria-hidden="true">X</div>
+                                <div>
+                                    <h3 class="text-white text-sm font-bold">Ximena H.</h3>
+                                    <span class="text-xs text-kavod-silver/70">Cliente Verificado</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="bg-kavod-dark border border-kavod-gray/50 p-8 rounded-lg">
+                            <div class="flex text-kavod-gold mb-4 text-lg" aria-label="5 estrellas">★★★★★</div>
+                            <p class="text-kavod-silver text-sm leading-relaxed italic mb-6">"Excelente servicio. De primer nivel. Mi auto no había sido lavado en meses y tengo 2 niños pequeños, ya te imaginarás. ¡Dejaron el auto como nuevo! Definitivamente vale la pena el precio."</p>
+                            <div class="flex items-center gap-4 border-t border-kavod-gray/50 pt-4">
+                                <div class="w-10 h-10 bg-kavod-gold/20 rounded-full flex items-center justify-center text-kavod-gold font-bold" aria-hidden="true">J</div>
+                                <div>
+                                    <h3 class="text-white text-sm font-bold">Justin E.</h3>
+                                    <span class="text-xs text-kavod-silver/70">Cliente Verificado</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="bg-kavod-dark border border-kavod-gray/50 p-8 rounded-lg">
+                            <div class="flex text-kavod-gold mb-4 text-lg" aria-label="5 estrellas">★★★★★</div>
+                            <p class="text-kavod-silver text-sm leading-relaxed italic mb-6">"Instalaron PPF a mi camioneta. Excelente servicio, un PPF de calidad, fueron responsables con los tiempos de entrega y fue cómodo porque no me tuve que mover de casa. ¡Lo recomiendo y volveré pronto!"</p>
+                            <div class="flex items-center gap-4 border-t border-kavod-gray/50 pt-4">
+                                <div class="w-10 h-10 bg-kavod-gold/20 rounded-full flex items-center justify-center text-kavod-gold font-bold" aria-hidden="true">R</div>
+                                <div>
+                                    <h3 class="text-white text-sm font-bold">Ronald M.</h3>
+                                    <span class="text-xs text-kavod-silver/70">Cliente Verificado</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- FAQ -->
+            <section class="py-24 bg-kavod-dark border-t border-kavod-gray/20" id="faq">
+                <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+                    <div class="text-center mb-16">
+                        <p class="text-kavod-gold text-sm uppercase tracking-[0.2em] font-semibold mb-4 block">— Preguntas Frecuentes —</p>
+                        <h2 class="text-4xl font-bold text-metal">¿Necesitas ayuda? Tenemos respuestas</h2>
+                    </div>
+
+                    <div class="space-y-4">
+                        <details class="group bg-kavod-black border border-kavod-gray/50 rounded-lg overflow-hidden [&_summary::-webkit-details-marker]:hidden">
+                            <summary class="flex items-center justify-between p-6 cursor-pointer text-white font-semibold hover:text-kavod-gold transition-colors">
+                                ¿Trabajan con autos de alta gama y exóticos?
+                                <span class="text-kavod-gold text-2xl transition-transform group-open:rotate-45" aria-hidden="true">+</span>
+                            </summary>
+                            <div class="px-6 pb-6 text-kavod-silver text-sm leading-relaxed border-t border-kavod-gray/30 pt-4">
+                                Sí. Hemos detallado desde vehículos diarios hasta superdeportivos. Estamos entrenados para tratar pinturas y acabados de alta gama con los productos y procesos correctos, no con conjeturas.
+                            </div>
+                        </details>
+
+                        <details class="group bg-kavod-black border border-kavod-gray/50 rounded-lg overflow-hidden [&_summary::-webkit-details-marker]:hidden">
+                            <summary class="flex items-center justify-between p-6 cursor-pointer text-white font-semibold hover:text-kavod-gold transition-colors">
+                                ¿Cuál es la diferencia entre detailing y un lavado de auto?
+                                <span class="text-kavod-gold text-2xl transition-transform group-open:rotate-45" aria-hidden="true">+</span>
+                            </summary>
+                            <div class="px-6 pb-6 text-kavod-silver text-sm leading-relaxed border-t border-kavod-gray/30 pt-4">
+                                Un lavado quita la suciedad superficial. El detailing es un proceso profundo de múltiples pasos: corrige la pintura, limpia a fondo el interior y añade protección como recubrimientos cerámicos. Cuesta más porque hace mucho más por tu auto.
+                            </div>
+                        </details>
+
+                        <details class="group bg-kavod-black border border-kavod-gray/50 rounded-lg overflow-hidden [&_summary::-webkit-details-marker]:hidden">
+                            <summary class="flex items-center justify-between p-6 cursor-pointer text-white font-semibold hover:text-kavod-gold transition-colors">
+                                ¿Realmente van a mi ubicación?
+                                <span class="text-kavod-gold text-2xl transition-transform group-open:rotate-45" aria-hidden="true">+</span>
+                            </summary>
+                            <div class="px-6 pb-6 text-kavod-silver text-sm leading-relaxed border-t border-kavod-gray/30 pt-4">
+                                Así es. Llevamos nuestra propia agua, energía, productos y equipo a tu casa, oficina o edificio en cualquier parte de Miami-Dade. No tienes que moverte.
+                            </div>
+                        </details>
+
+                        <details class="group bg-kavod-black border border-kavod-gray/50 rounded-lg overflow-hidden [&_summary::-webkit-details-marker]:hidden">
+                            <summary class="flex items-center justify-between p-6 cursor-pointer text-white font-semibold hover:text-kavod-gold transition-colors">
+                                ¿Qué es exactamente el "Surface Care"?
+                                <span class="text-kavod-gold text-2xl transition-transform group-open:rotate-45" aria-hidden="true">+</span>
+                            </summary>
+                            <div class="px-6 pb-6 text-kavod-silver text-sm leading-relaxed border-t border-kavod-gray/30 pt-4">
+                                Es nuestro servicio de protección avanzada. Incluye la aplicación de capas cerámicas (ceramic coating) que fijan el brillo, repelen el agua y protegen contra los rayos UV y contaminantes ambientales durante años, no meses.
+                            </div>
+                        </details>
+                    </div>
+                </div>
+            </section>
+
+            <!-- CTA FINAL BANNER -->
+            <section class="relative py-24 bg-kavod-black overflow-hidden border-t border-kavod-gray/20">
+                <div class="absolute inset-0 z-0">
+                    <div class="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1603584173870-7f23fdae1b7a?q=80&w=2069&auto=format&fit=crop')] bg-cover bg-center bg-no-repeat opacity-20"></div>
+                    <div class="absolute inset-0 bg-gradient-to-t from-kavod-black via-kavod-black/80 to-kavod-black"></div>
+                </div>
+                <div class="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                    <h2 class="text-4xl md:text-5xl font-bold text-white mb-6">¿Listo para hacer lucir tu auto como nuevo?</h2>
+                    <p class="text-kavod-silver text-lg mb-10">Dinos qué auto tienes y dónde estás. Te enviaremos una cotización y una hora — usualmente el mismo día.</p>
+                    <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+                        <a href="https://wa.me/13058980912?text=Hola%20KAVOD,%20me%20gustar%C3%ADa%20una%20cotizaci%C3%B3n" target="_blank" rel="noopener noreferrer" class="btn-brillo w-full sm:w-auto bg-kavod-gold text-kavod-black font-bold py-4 px-10 rounded-sm uppercase tracking-widest text-sm hover:bg-yellow-600 transition-colors">Mensaje por WhatsApp</a>
+                        <a href="tel:+13058980912" class="w-full sm:w-auto border border-kavod-silver/50 text-kavod-white font-semibold py-4 px-10 rounded-sm uppercase tracking-widest text-sm hover:bg-kavod-silver hover:text-kavod-black transition-colors">📞 Llamar (305) 898 0912</a>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+
+        <!-- ===== VISTA: PORTAFOLIO (sin hidden, oculta por .vista-oculta) ===== -->
+        <main id="vista-portafolio" class="vista vista-oculta">
+            <section class="pt-20 pb-16 bg-kavod-black">
+                <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                    <h2 class="text-4xl md:text-5xl font-bold text-metal mb-4">Nuestro Trabajo</h2>
+                    <div class="linea-dorada w-32 mx-auto mb-6"></div>
+                    <p class="text-kavod-silver max-w-2xl mx-auto text-lg">
+                        Resultados que hablan por sí solos. Explora algunos de nuestros proyectos de detailing y restauración más recientes.
+                    </p>
+                </div>
+            </section>
+
+            <section class="py-10 bg-kavod-black pb-24">
+                <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                        <div class="relative group rounded-lg overflow-hidden border border-kavod-gray/30 aspect-square">
+                            <img src="https://images.unsplash.com/photo-1618843479313-40f8afb4b4d8?q=80&w=800&auto=format&fit=crop" alt="Detailing de Mercedes Benz AMG" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" loading="lazy" decoding="async">
+                            <div class="absolute inset-0 bg-gradient-to-t from-kavod-black via-kavod-black/40 to-transparent opacity-80 group-hover:opacity-100 transition-opacity duration-300"></div>
+                            <div class="absolute bottom-0 left-0 p-6 w-full transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
+                                <p class="text-kavod-gold text-xs font-bold tracking-widest uppercase mb-1">Reconditioning</p>
+                                <h3 class="text-xl font-bold text-white">Mercedes AMG GT</h3>
+                            </div>
+                        </div>
+                        <div class="relative group rounded-lg overflow-hidden border border-kavod-gray/30 aspect-square">
+                            <img src="https://images.unsplash.com/photo-1542362567-b07e54358753?q=80&w=800&auto=format&fit=crop" alt="Restauración interior de auto de lujo" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" loading="lazy" decoding="async">
+                            <div class="absolute inset-0 bg-gradient-to-t from-kavod-black via-kavod-black/40 to-transparent opacity-80 group-hover:opacity-100 transition-opacity duration-300"></div>
+                            <div class="absolute bottom-0 left-0 p-6 w-full transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
+                                <p class="text-kavod-gold text-xs font-bold tracking-widest uppercase mb-1">Vehicle Appearance</p>
+                                <h3 class="text-xl font-bold text-white">Audi R8 Interior</h3>
+                            </div>
+                        </div>
+                        <div class="relative group rounded-lg overflow-hidden border border-kavod-gray/30 aspect-square">
+                            <img src="https://images.unsplash.com/photo-1555215695-3004980ad54e?q=80&w=800&auto=format&fit=crop" alt="Tratamiento cerámico en pintura de BMW" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" loading="lazy" decoding="async">
+                            <div class="absolute inset-0 bg-gradient-to-t from-kavod-black via-kavod-black/40 to-transparent opacity-80 group-hover:opacity-100 transition-opacity duration-300"></div>
+                            <div class="absolute bottom-0 left-0 p-6 w-full transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
+                                <p class="text-kavod-gold text-xs font-bold tracking-widest uppercase mb-1">Surface Care</p>
+                                <h3 class="text-xl font-bold text-white">BMW M4 Competition</h3>
+                            </div>
+                        </div>
+                        <div class="relative group rounded-lg overflow-hidden border border-kavod-gray/30 aspect-square">
+                            <img src="https://images.unsplash.com/photo-1503376713246-7b38d3eb8b0a?q=80&w=800&auto=format&fit=crop" alt="Porsche 911" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" loading="lazy" decoding="async">
+                            <div class="absolute inset-0 bg-gradient-to-t from-kavod-black via-kavod-black/40 to-transparent opacity-80 group-hover:opacity-100 transition-opacity duration-300"></div>
+                            <div class="absolute bottom-0 left-0 p-6 w-full transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
+                                <p class="text-kavod-gold text-xs font-bold tracking-widest uppercase mb-1">Full Detail</p>
+                                <h3 class="text-xl font-bold text-white">Porsche 911</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- ===== VISTA: CONTACTO (sin hidden, oculta por .vista-oculta) ===== -->
+        <main id="vista-contacto" class="vista vista-oculta">
+            <section class="pt-20 pb-16 bg-kavod-black">
+                <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                    <h2 class="text-4xl md:text-5xl font-bold text-metal mb-4">Contacto</h2>
+                    <div class="linea-dorada w-32 mx-auto mb-6"></div>
+                    <p class="text-kavod-silver max-w-2xl mx-auto text-lg">
+                        Agenda tu cita o solicita una cotización personalizada. Estamos listos para atenderte.
+                    </p>
+                </div>
+            </section>
+
+            <section class="py-10 pb-24 bg-kavod-black">
+                <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                        <div class="bg-kavod-dark border border-kavod-gray/50 rounded-lg p-8 relative overflow-hidden">
+                            <h3 class="text-2xl font-bold text-white mb-8">Información Directa</h3>
+                            <ul class="space-y-6">
+                                <li class="flex items-start">
+                                    <div class="flex-shrink-0 w-10 h-10 bg-kavod-black border border-kavod-gold/30 rounded-full flex items-center justify-center text-kavod-gold mt-1">
+                                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path></svg>
+                                    </div>
+                                    <div class="ml-4">
+                                        <p class="text-xs text-kavod-silver uppercase tracking-widest mb-1">Llámanos</p>
+                                        <a href="tel:+13058980912" class="text-lg font-medium text-white hover:text-kavod-gold transition-colors">305 898 0912</a>
+                                    </div>
+                                </li>
+                                <li class="flex items-start">
+                                    <div class="flex-shrink-0 w-10 h-10 bg-kavod-black border border-kavod-gold/30 rounded-full flex items-center justify-center text-kavod-gold mt-1">
+                                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
+                                    </div>
+                                    <div class="ml-4">
+                                        <p class="text-xs text-kavod-silver uppercase tracking-widest mb-1">Ubicación</p>
+                                        <p class="text-lg font-medium text-white">Miami-Dade, FL</p>
+                                    </div>
+                                </li>
+                                <li class="flex items-start">
+                                    <div class="flex-shrink-0 w-10 h-10 bg-kavod-black border border-kavod-gold/30 rounded-full flex items-center justify-center text-kavod-gold mt-1">
+                                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+                                    </div>
+                                    <div class="ml-4">
+                                        <p class="text-xs text-kavod-silver uppercase tracking-widest mb-1">Email</p>
+                                        <a href="mailto:info@kavoddetailing.com" class="text-lg font-medium text-white hover:text-kavod-gold transition-colors">info@kavoddetailing.com</a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="bg-kavod-dark border border-kavod-gray/50 rounded-lg p-8">
+                            <form id="formulario-contacto-page" class="space-y-6">
+                                <div>
+                                    <label for="nombre-page" class="block text-xs font-medium text-kavod-silver uppercase tracking-wider mb-2">Nombre Completo</label>
+                                    <input type="text" id="nombre-page" name="nombre" required autocomplete="name" class="w-full bg-kavod-black border border-kavod-gray text-white px-4 py-3 rounded-sm focus:outline-none focus:border-kavod-gold transition-colors" placeholder="Tu nombre">
+                                </div>
+                                <div>
+                                    <label for="email-page" class="block text-xs font-medium text-kavod-silver uppercase tracking-wider mb-2">Correo Electrónico</label>
+                                    <input type="email" id="email-page" name="email" required autocomplete="email" class="w-full bg-kavod-black border border-kavod-gray text-white px-4 py-3 rounded-sm focus:outline-none focus:border-kavod-gold transition-colors" placeholder="tu@email.com">
+                                </div>
+                                <div>
+                                    <label for="mensaje-page" class="block text-xs font-medium text-kavod-silver uppercase tracking-wider mb-2">Mensaje</label>
+                                    <textarea id="mensaje-page" name="mensaje" rows="4" class="w-full bg-kavod-black border border-kavod-gray text-white px-4 py-3 rounded-sm focus:outline-none focus:border-kavod-gold transition-colors" placeholder="Cuéntanos sobre tu vehículo..."></textarea>
+                                </div>
+                                <button type="submit" class="btn-brillo w-full bg-kavod-gold text-kavod-black font-bold py-4 rounded-sm uppercase tracking-widest text-sm hover:bg-yellow-600 transition-colors">
+                                    Enviar Mensaje
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+    </div>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="bg-[#020202] border-t border-kavod-gray/30 pt-16 pb-8" id="footer">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
+                
+                <div class="lg:col-span-1">
+                    <a href="#inicio" class="inline-flex items-center gap-3 mb-6 group">
+                        <svg class="w-8 h-8 text-kavod-silver group-hover:text-kavod-gold transition-colors duration-300" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M50 5 L90 20 V50 C90 75 50 95 50 95 C50 95 10 75 10 50 V20 L50 5 Z" stroke="currentColor" stroke-width="3" fill="transparent"/>
+                            <path d="M40 35 V65 M40 50 L65 35 M40 50 L65 65" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <div class="flex flex-col">
+                            <span class="text-lg font-bold tracking-[0.2em] text-metal leading-none">KAVOD</span>
+                            <span class="text-[0.55rem] tracking-[0.3em] text-kavod-silver/70 mt-1">AUTO DETAILING</span>
+                        </div>
+                    </a>
+                    <p class="text-kavod-silver text-sm leading-relaxed mb-6">
+                        Elevando el estándar del cuidado automotriz en Miami-Dade. Precisión, lujo y resultados excepcionales.
+                    </p>
+                    <div class="flex items-center gap-4 text-kavod-silver">
+                        <a href="https://instagram.com/kavoddetailing" target="_blank" rel="noopener noreferrer" class="hover:text-kavod-gold transition-colors" aria-label="Instagram"><svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg></a>
+                        <a href="https://facebook.com/kavoddetailing" target="_blank" rel="noopener noreferrer" class="hover:text-kavod-gold transition-colors" aria-label="Facebook"><svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M22.675 0h-21.35c-.732 0-1.325.593-1.325 1.325v21.351c0 .731.593 1.324 1.325 1.324h11.495v-9.294h-3.128v-3.622h3.128v-2.671c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.795.143v3.24l-1.918.001c-1.504 0-1.795.715-1.795 1.763v2.313h3.587l-.467 3.622h-3.12v9.293h6.116c.73 0 1.323-.593 1.323-1.325v-21.35c0-.732-.593-1.325-1.325-1.325z"/></svg></a>
+                        <a href="https://tiktok.com/@kavoddetailing" target="_blank" rel="noopener noreferrer" class="hover:text-kavod-gold transition-colors" aria-label="TikTok"><svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-5.2 1.74 2.89 2.89 0 012.31-4.64 2.93 2.93 0 01.88.13V9.4a6.84 6.84 0 00-1-.05A6.33 6.33 0 005 20.1a6.34 6.34 0 0010.86-4.43v-7a8.16 8.16 0 004.77 1.52v-3.4a4.85 4.85 0 01-1-.1z"/></svg></a>
+                        <a href="https://youtube.com/@kavoddetailing" target="_blank" rel="noopener noreferrer" class="hover:text-kavod-gold transition-colors" aria-label="YouTube"><svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg></a>
+                    </div>
+                </div>
+
+                <div>
+                    <h3 class="text-white font-semibold tracking-wider uppercase text-sm mb-6">Navegación</h3>
+                    <ul class="space-y-3">
+                        <li><a href="#inicio"     class="text-kavod-silver hover:text-kavod-gold text-sm transition-colors">Inicio</a></li>
+                        <li><a href="#servicios"  class="text-kavod-silver hover:text-kavod-gold text-sm transition-colors">Servicios</a></li>
+                        <li><a href="#paquetes"   class="text-kavod-silver hover:text-kavod-gold text-sm transition-colors">Paquetes</a></li>
+                        <li><a href="#portafolio" class="text-kavod-silver hover:text-kavod-gold text-sm transition-colors">Portafolio</a></li>
+                        <li><a href="#nosotros"   class="text-kavod-silver hover:text-kavod-gold text-sm transition-colors">Nosotros</a></li>
+                        <li><a href="#faq"        class="text-kavod-silver hover:text-kavod-gold text-sm transition-colors">FAQ</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 class="text-white font-semibold tracking-wider uppercase text-sm mb-6">Contacto</h3>
+                    <ul class="space-y-3 text-sm text-kavod-silver">
+                        <li class="flex items-center gap-3"><svg class="w-4 h-4 text-kavod-gold flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>Miami-Dade, FL</li>
+                        <li class="flex items-center gap-3"><svg class="w-4 h-4 text-kavod-gold flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path></svg><a href="tel:+13058980912" class="hover:text-kavod-gold transition-colors">305 898 0912</a></li>
+                        <li class="flex items-center gap-3"><svg class="w-4 h-4 text-kavod-gold flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg><a href="mailto:info@kavoddetailing.com" class="hover:text-kavod-gold transition-colors">info@kavoddetailing.com</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 class="text-white font-semibold tracking-wider uppercase text-sm mb-6">Horario</h3>
+                    <p class="text-kavod-silver text-sm mb-4">Lun – Dom<br>8:00 AM – 7:00 PM</p>
+                    <h3 class="text-white font-semibold tracking-wider uppercase text-sm mb-2">Sitio Web</h3>
+                    <a href="https://www.kavoddetailing.com" target="_blank" rel="noopener noreferrer" class="text-kavod-silver hover:text-kavod-gold text-sm transition-colors">www.kavoddetailing.com</a>
+                </div>
+            </div>
+
+            <div class="border-t border-kavod-gray/30 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
+                <p class="text-kavod-silver/60 text-xs">
+                    &copy; <span id="year"></span> KAVOD Auto Detailing. Todos los derechos reservados.
+                </p>
+                <p class="text-kavod-silver/60 text-xs">
+                    Mobile Detailing en Miami-Dade, FL.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ===== MODAL GLOBAL ===== -->
+    <div id="modal-global" class="fixed inset-0 z-[100] bg-kavod-black/90 backdrop-blur-sm hidden items-center justify-center p-4" role="dialog" aria-modal="true" aria-labelledby="modal-titulo" aria-describedby="modal-descripcion" aria-hidden="true">
+        <div class="bg-kavod-dark border border-kavod-gray/50 rounded-lg max-w-md w-full p-8 relative shadow-2xl transform scale-95 transition-transform duration-300" id="modal-contenido">
+            <button type="button" id="cerrar-modal-icono" class="absolute top-4 right-4 text-kavod-silver hover:text-kavod-gold focus:outline-none focus:ring-2 focus:ring-kavod-gold rounded-full p-1" aria-label="Cerrar modal">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+            </button>
+            <div class="text-center">
+                <div class="w-16 h-16 bg-kavod-black rounded-full flex items-center justify-center mx-auto mb-6 border border-kavod-gold/50">
+                    <svg class="w-8 h-8 text-kavod-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                </div>
+                <h3 id="modal-titulo" class="text-2xl font-bold text-white mb-2">¡Mensaje Recibido!</h3>
+                <p id="modal-descripcion" class="text-kavod-silver text-sm mb-8">Gracias por contactar a KAVOD Auto Detailing. Nuestro equipo se pondrá en contacto contigo a la brevedad posible para coordinar los detalles.</p>
+                <button type="button" id="cerrar-modal-boton" class="btn-brillo w-full bg-kavod-gold text-kavod-black font-bold py-3 rounded-sm uppercase tracking-widest text-sm hover:bg-yellow-600 transition-colors focus:outline-none focus:ring-2 focus:ring-kavod-gold focus:ring-offset-2 focus:ring-offset-kavod-dark">
+                    Entendido
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- ===== BOTÓN FLOTANTE WHATSAPP ===== -->
+    <a href="https://wa.me/13058980912?text=Hola%20KAVOD%20Auto%20Detailing,%20me%20gustar%C3%ADa%20solicitar%20una%20cotizaci%C3%B3n%20para%20mi%20veh%C3%ADculo." target="_blank" rel="noopener noreferrer" class="fixed bottom-6 right-6 z-50 bg-[#25D366] text-white p-4 rounded-full shadow-lg hover:scale-110 hover:shadow-[0_0_20px_rgba(37,211,102,0.4)] transition-all duration-300 flex items-center justify-center group" aria-label="Contactar por WhatsApp">
+        <svg class="w-7 h-7" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
+        </svg>
+        <span class="absolute right-full mr-4 bg-kavod-dark text-white text-xs py-2 px-3 rounded opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap pointer-events-none border border-kavod-gray/50">¿Necesitas ayuda?</span>
+    </a>
+
+    <!-- ===== SCRIPTS ===== -->
+    <script src="js/script.js"></script>
+</body>
+</html>
